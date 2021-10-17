@@ -1,0 +1,62 @@
+body {
+   background: url('https://images6.alphacoders.com/529/529565.jpg') center center / cover no-repeat;
+}
+.container {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
+   display: flex;
+   justify-content: center;
+}
+.game-wrapper {
+   display: inline-flex;
+   justify-content: center;
+   border: 2px solid #000;
+   border-radius: 10px;
+}
+.grid {
+   /*width: 300px;*/
+   width: 500px;
+   /*height: 300px;*/
+   height: 500px;
+   border: solid black 1px;
+   display: flex;
+   flex-wrap: wrap;
+   background: url('https://wallpaperaccess.com/full/392777.jpg') center top / cover no-repeat;
+}
+.grid div {
+   width: 41.5px;
+   height: 41.5px;
+   /* width: 20px */
+   /* height: 20px */
+}
+.invader {
+   /*background-color: orangered;*/
+   background: url(img/invaders/invader-2.png) center center / cover no-repeat;
+   border-radius: 10px;
+}
+
+.shooter {
+   background: url(img/shooter.png) center center / cover no-repeat;
+}
+.laser {
+   position: relative;
+}
+.laser::before {
+   position: absolute;
+   content: '';
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   margin: 0 auto;
+   background: red;
+   width: 5px;
+   height: 50%;
+}
+.boom {
+   background: url(img/boom.png) center center / cover no-repeat;
+}
+.info {
+   background: rgb(194, 93, 53);
+}
